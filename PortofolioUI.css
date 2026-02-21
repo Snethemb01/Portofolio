@@ -1,0 +1,165 @@
+* 
+  margin: 0;
+  padding: 0;
+}
+/* Always show the hamburger icon */
+.hamburger {
+  display: block; 
+  font-size: 2rem;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Hide the menu by default, remove bullets */
+.navbar {
+  display: none; 
+  flex-direction: column;
+  text-align: center;
+  list-style: none; /* Removes the bullet points */
+  padding: 0;
+}
+
+/* Show the menu when the hamburger is clicked */
+.navbar.active {
+  display: flex; 
+}
+
+/* Make the links look like plain text */
+.navbar a {
+  text-decoration: none; /* Removes the underline */
+  color: inherit; /* Copies the text color of your light/dark theme */
+  font-size: 1.2rem;
+  padding: 10px;
+  display: block; /* Makes the whole area clickable, not just the text */
+}
+
+
+body {
+  margin: 0;
+  font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+  transition: background-color 0.3s, color 0.3s;
+}
+html {scroll-behavior: smooth;
+  
+}
+a,
+.btn {
+  transition: all 500ms ease;
+}
+
+.light {
+  background-color: #ffffff;
+  color: #111111;
+}
+.dark {
+  background-color: #111111;
+  color: #ffffff;
+}
+.theme-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  background: #ccc;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.home {
+  text-align: center;
+  padding: 5rem 1rem;
+}
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.btn-primary {
+  background-color: #0071e3;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+.btn-primary:hover {
+  transform: scale(1.10);
+  border-color: aliceblue;
+  transition: transform 500ms ease, border-color 500ms ease;
+  transform-style: smooth;
+}
+.btn-link {
+  background: gainsboro;
+  color: whitesmoke;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid transparent;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.btn-link:hover {
+  transform: scale(1.10);
+  border-color: aliceblue;
+  transition: transform 500ms ease, border-color 500ms ease;
+  transform-style: smooth;
+}
+.image-container img {
+  max-width: 600px;
+  width: 100%;
+  margin-top: 2rem;
+}
+.image-container img:hover {
+  transform: scale(1.05);
+  border-color: aliceblue;
+  transition: transform 500ms ease, border-color 500ms ease;
+  transform-style: smooth;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: gray;
+  color: #fff;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0; width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.8); /* Dark tint */
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply; /* Blends the image with the dark tint */
+}
+
+.modal-content {
+  color: white;
+  padding: 50px;
+  margin-top: 20vh;
+  max-width: 600px;
+}
+
+.close-modal {
+  position: absolute;
+  top: 20px; right: 30px;
+  color: white; font-size: 40px; cursor: pointer;
+}
+
+
+
